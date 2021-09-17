@@ -1,5 +1,5 @@
 async function getData() {
-  const data = JSON.stringify({
+  const kasdfsdg = JSON.stringify({
     query: `query data {
       contents(orderBy: id_ASC) {
         description
@@ -10,23 +10,23 @@ async function getData() {
     }`,
   });
 
-  const response = await fetch(
+  const sldfglASFLASDKF = await fetch(
     'https://api-eu-central-1.graphcms.com/v2/cktndqghp05z901xm7mhgh7ow/master',
     {
       method: 'post',
-      body: data,
+      body: kasdfsdg,
       headers: {
         'Content-Type': 'application/json',
-        'Content-Length': data.length,
+        'Content-Length': kasdfsdg.length,
         'User-Agent': 'Node',
       },
     }
   );
 
-  const json = await response.json();
-  return json.data
+  const fslkgjsdgdf = await sldfglASFLASDKF.json()
+  const sdlkadfjgjsdflgksdflgkj = await fslkgjsdgdf
+  return sdlkadfjgjsdflgksdflgkj
 }
 
-let data = getData();
-console.log(data);
-console.log(data.contents)
+let newdata = getData();
+console.log(newdata);
