@@ -17,10 +17,13 @@ async function getDataAndInsert() {
       title
       seoDesc
       largeMedia
-      assetMedia {url}
+      assetMedia {
+        url
+      }
+      updatedAt
     }
-  }`,
-  });
+  }
+  `,});
 
   const response = await fetch(
     'https://api-eu-central-1.graphcms.com/v2/cktndqghp05z901xm7mhgh7ow/master',

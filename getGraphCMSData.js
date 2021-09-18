@@ -8,11 +8,8 @@ async function getDataAndLink() {
     query: `query data {
     contents(orderBy: id_ASC) {
       id
-      description
       title
       seoDesc
-      largeMedia
-      assetMedia {url}
     }
   }`,
   });
@@ -34,10 +31,8 @@ async function getDataAndLink() {
   const realData = dataraw.data;
 
   const allContent = realData.contents;
-  console.log("All content:", allContent)
 
   var arrayLength = allContent.length;
-  console.log("Total Enteries in array: ", arrayLength)
   for (var i=0; i < arrayLength; i++){
     console.log(allContent[i])
 
