@@ -58,7 +58,6 @@ async function getDataAndInsert() {
         e.controls = true;
         e.width = window.innerWidth - 50; //the window width with a bit of room
         e.height = 720;
-        e.id = "large";
         document.body.appendChild(e);
       } else {
         var videoURL = allContent[i].assetMedia.url;
@@ -68,7 +67,6 @@ async function getDataAndInsert() {
         e.height = 360;
         e.autoplay = false;
         e.controls = true;
-        e.id = "small";
         document.body.appendChild(e);
       }
     }
