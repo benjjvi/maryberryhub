@@ -31,6 +31,7 @@ async function getDataAndInsert() {
   console.log("All content:", allContent)
 
   var arrayLength = allContent.length;
+  console.log("Total Enteries in array: ", arrayLength)
   for (var i=0; i < arrayLength; i++){
     console.log("Iteration:", i);
     console.log("Current content:", allContent[i]);
