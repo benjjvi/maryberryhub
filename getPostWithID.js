@@ -1,9 +1,14 @@
-function addLnBr() {
-  var br = document.createElement("br");
-  document.body.appendChild(br);
-}
+async function getDataAndInsert() {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
 
-async function getDataAndLink() {
+  if (urlParams.has("id")) {
+      const postID = urlParams.get('id')
+      console.log(postID)
+  } else {
+      window.location.replace("./")
+  }
+
   const data = JSON.stringify({
     query: `query data {
     contents(orderBy: id_ASC) {
@@ -34,19 +39,24 @@ async function getDataAndLink() {
   const realData = dataraw.data;
 
   const allContent = realData.contents;
-  console.log("All content:", allContent)
-
   var arrayLength = allContent.length;
-  console.log("Total Enteries in array: ", arrayLength)
-  for (var i=0; i < arrayLength; i++){
-    console.log(allContent[i])
 
-    var lnk = document.createElement("a");
-    lnk.href = "./post.html?id=" + allContent[i].id
-    lnk.innerHTML = allContent[i].title;
-    document.body.appendChild(lnk);
-    addLnBr();
+  const postID = urlParams.get('id')
+
+  var foundID = false;
+  for (var i=0; i < arrayLength; i++){
+    if (allContent[i].id === postID) {
+      console.log("foundID")
+      var foundID = true;
+    }
+  }
+
+  if (foundID !== true) {
+    window.location.replace("./")
+  } else{
+    console.log()
+    //at this point, i would put in logic code but im too lazy, will add to github TODO
   }
 }
 
-getDataAndLink(); //get data AND put it into the website
+getDataAndInsert(); //get data AND put it into the website
