@@ -34,14 +34,18 @@ async function getDataAndLink() {
 
   var arrayLength = allContent.length;
   for (var i=0; i < arrayLength; i++){
-    console.log(allContent[i])
-
     var lnk = document.createElement("a");
     lnk.href = "./post.html?id=" + allContent[i].id
     lnk.innerHTML = allContent[i].title;
+    lnk.title = allContent[i].seoDesc;
     document.body.appendChild(lnk);
+
     addLnBr();
   }
+
+  var e = document.createElement("h3");
+  e.innerHTML = "Thank you for visiting Mary Berry Hub."
+  document.body.appendChild(e);
 }
 
 getDataAndLink(); //get data AND put it into the website

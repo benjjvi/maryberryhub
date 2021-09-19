@@ -1,5 +1,125 @@
+/*
+p: text content: description
+h1: title, article and "mary berry hub" text
+h4: updated at
+video: its pretty obvious i think, if it isn't you must be a bit slow
+*/
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
+}
+
+a {
+    color: ghostwhite;
+    background-color: cadetblue;
+    font-size: 21px;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    border: 3px solid transparent;
+    border-radius: 25px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 2px;
+    margin-right: 2px;
+    display: inline-block;
+}
+
+p {
+    color: black;
+    background-color: #ccc;
+    font-size: 21px;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    border: 3px solid transparent;
+    border-radius: 25px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 2px;
+    margin-right: 2px;
+    display: inline-block;
+}
+
+h4 {
+    color: ghostwhite;
+    background-color: red;
+    font-size: 21px;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    border: 3px solid transparent;
+    border-radius: 25px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 2px;
+    margin-right: 2px;
+    display: inline-block;
+}
+
+.btn-rounded-dark {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    transition: .5s ease all;
+}
+
+.btn-rounded-dark:hover {
+    color: #3498db;
+    background: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ccc;
+}
+
+
+h3 {
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ccc;
+}
+
+h5 {
+    font-size: 21px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ccc;
+}
+
 body,
 html {
-  background-color: white;
-  color: black;
+    background: #222;
+    color: #222;
+}
+
+.container {
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    background: #333;
+    padding: 20px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.2;
 }

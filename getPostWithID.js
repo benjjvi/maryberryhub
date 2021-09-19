@@ -124,7 +124,7 @@ async function getDataAndInsert() {
     }
 
     document.getElementById("l").innerHTML = "";
-
+    
     var e = document.createElement("h3");
     e.innerHTML = "Thank you for visiting Mary Berry Hub."
     document.body.appendChild(e);
