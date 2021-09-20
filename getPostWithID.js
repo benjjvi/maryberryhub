@@ -123,7 +123,6 @@ async function getDataAndInsert() {
       }
 
       if (j===4) {
-        
         var e = document.createElement("meta");
         e.name = "description";
         e.content = items[j];
