@@ -121,10 +121,18 @@ async function getDataAndInsert() {
           }
         }
       }
+
+      if (j===4) {
+        
+        var e = document.createElement("meta");
+        e.name = "description";
+        e.content = items[j];
+        document.head.appendChild(e)
+      }
     }
 
     document.getElementById("l").innerHTML = "";
-    
+
     var e = document.createElement("h3");
     e.innerHTML = "Thank you for visiting Mary Berry Hub."
     document.body.appendChild(e);
